@@ -1,0 +1,103 @@
+/* CSS files add styling rules to your content */
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Proza Libre', sans-serif;
+}
+
+h2,h3,h4,h5 {
+  
+}
+
+.titulo {
+  text-color:black;
+}
+
+.cover {
+  height:400px;
+  background-image:url(https://cdn.glitch.com/af866f21-97b0-4468-9068-0c1660a7f323%2Frsz_christopher-gower-m_hrflhgabo-unsplash.jpg?v=1604539916139);
+  color:white;
+  background-size:cover;
+  background-position:center;
+  background-color:rgba(0,0,0,0.6);
+  background-blend-mode:darken;  
+}
+
+
+
+.cover-small{
+  height:200px;
+  background-blend-mode:normal;  
+  
+}
+
+.card {  
+  
+  flex-shrink:0;
+  margin-right:1rem;
+  border: 0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,1), 0 2px 6px -1px rgba(0,0,0,0.06);
+}
+
+.card-title{
+  min-height:3rem;
+}
+
+.card-text{
+  min-height:4rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.slider-container{
+  display:flex;
+}
+
+.slider-container{
+  transform:translateX(0);
+  animation: slider 6s infinite;
+}
+
+.slider{
+  overflow-x:scroll;
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+.slider{
+  overflow:hidden;
+}
+
+.image-container{
+  width:100%;
+  padding-top:56.26%;
+  background-size:cover;
+  background-position:center;
+  flex-shrink:0;
+}
+
+@keyframes slider{
+  0%{
+    transform:translateX(0);
+  } 
+  20%{
+    transform:translateX(0);
+  }
+  35%{
+    transform:translateX(-100%);
+  } 
+  45%{
+    transform:translateX(-100%);
+  }
+  60%{
+    transform:translateX(-200%);
+  } 
+  95%{
+    transform:translateX(-200%);
+  }
+  100%{
+    transform:translateX(0%);
+  }
+}
